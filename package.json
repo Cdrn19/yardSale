@@ -1,0 +1,46 @@
+{
+  "name": "yardsale",
+  "version": "1.0.0",
+  "description": "e-commerce project developed in React.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production --config webpack.config.js && echo '/* /index.html 200' | cat > dist/_redirects ",
+    "dev": "webpack serve --open --config webpack.config.dev.js"
+  },
+  "keywords": [
+    "javascript",
+    "scss",
+    "react",
+    "css",
+    "html",
+    "webpack"
+  ],
+  "author": "Carlos Revetti <cdrn_19@hotmail.com> (https://cdrn19.github.io)",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.4",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^3.4.1",
+    "dotenv": "^16.0.0",
+    "dotenv-webpack": "^7.1.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.2.0",
+    "sass": "^1.38.0",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.2.1",
+    "terser-webpack-plugin": "^5.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  }
+}
